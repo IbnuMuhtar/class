@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+ 
+class mahasiswa{
+public:
+    int nim;
+    string nama;
+    float nilai;
+    void printData(){
+        cout<<"NIM   \t= "<<nim<<endl;
+        cout<<"Nama  \t= "<<nama<<endl;
+        cout<<"Nilai \t= "<<nilai<<endl;
+    }
+};
+ 
+int main() {
+    mahasiswa anton;
+    anton.nim=1234;
+    anton.nama="Anton Cpluzer";
+    anton.nilai=95;
+    anton.printData();
+    return 0;
+}
