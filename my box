@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class Box {
+   public:
+      double length;   // Panjang kotak
+      double breadth;  // Lebar kotak
+      double height;   // Tinggi kotak
+
+      // Metode untuk menghitung volume kotak
+      double getVolume(void) {
+         return length * breadth * height;
+      }
+};
+
+int main() {
+   Box myBox;                // Membuat objek kelas Box
+   double volume = 0.0;      // Variabel untuk menyimpan volume kotak
+
+   // Mengatur nilai panjang, lebar, dan tinggi kotak
+   myBox.length = 5.0;
+   myBox.breadth = 2.0;
+   myBox.height = 3.0;
+
+   // Menghitung volume kotak
+   volume = myBox.getVolume();
+
+   // Mencetak volume kotak
+   cout << "Volume kotak: " << volume << endl;
+
+   return 0;
+}
